@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  Bloodgroup: MyString
+  address: MyString
+  contact: 1
+  Blood_doneted_on: 2021-03-22
+
+two:
+  name: MyString
+  age: 1
+  Bloodgroup: MyString
+  address: MyString
+  contact: 1
+  Blood_doneted_on: 2021-03-22

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  boolgroup: MyString
+  contact: 1
+  On_the_date: 2021-03-22
+
+two:
+  name: MyString
+  age: 1
+  boolgroup: MyString
+  contact: 1
+  On_the_date: 2021-03-22

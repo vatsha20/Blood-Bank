@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Patients</h1>
+
+<table border="2px" class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Bloodgroup</th>
+      <th>Contact</th>
+      <th>On the date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patients.each do |patient| %>
+      <tr>
+        <td><%= patient.name %></td>
+        <td><%= patient.age %></td>
+        <td><%= patient.Boolgroup %></td>
+        <td><%= patient.contact %></td>
+        <td><%= patient.On_the_date %></td>
+        <td><%= link_to 'Edit', edit_patient_path(patient), class: "btn btn-primary" %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="flickr_pagination">
+<%= will_paginate @patients %>
+</div>
+<br>
+
+<%= link_to 'New Patient', new_patient_path , class:"btn btn-success" %>

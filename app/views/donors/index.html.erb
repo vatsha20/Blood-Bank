@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Donors</h1>
+
+<table border=2px class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Bloodgroup</th>
+      <th>Address</th>
+      <th>Contact</th>
+      <th>Blood doneted on</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @donors.each do |donor| %>
+      <tr>
+        <td><%= donor.name %></td>
+        <td><%= donor.age %></td>
+        <td><%= donor.Bloodgroup %></td>
+        <td><%= donor.address %></td>
+        <td><%= donor.contact %></td>
+        <td><%= donor.Blood_doneted_on %></td>
+        <td><%= link_to 'Edit', edit_donor_path(donor) %></td>
+       
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class="flickr_pagination">
+<%= will_paginate @Donor %>
+</div>
+
+<br>
+
+<%= link_to 'New Donor', new_donor_path %>
